@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { Container, Content } from 'native-base'
 import Swiper from 'react-native-swiper'
-
+import Camera from './Components/Camera'
 export default class App extends React.Component {
   constructor() {
     super()
@@ -47,8 +47,9 @@ export default class App extends React.Component {
               <View style={styles.slideDefault}>
                 <Text style={styles.text}>TOP MENU!</Text>
               </View>
-              <View style={styles.slideDefault}>
-                <Text style={styles.text}>HOME!</Text>
+              <View style={{ flex: 1 }}>
+                {/* <Text style={styles.text}>HOME!</Text> */}
+                <Camera></Camera>
               </View>
               <View style={styles.slideDefault}>
                 <Text style={styles.text}>BOTTOM MENU!</Text>
